@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="pt-br">                                     /* fluxo de dados do site */
+<head>                
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Realize seu login </title>
+</head>
+
+<header>
+    <h1> $ONSHOP$ <br> Acesso ao sistema </h1>
+    <a href="produtos.html" class="botao-produtos"> Voltar para Produtos </a>
+</header>
+<style>
+    header {
+        background-color: #4CAF50;
+        color: white;
+        padding: 15px 40px;
+        text-align: center;
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;;
+    }
+
+    main {
+      flex-grow: 1; 
+        display: flex;
+        justify-content: center;
+      align-items: center;
+       
+    }
+
+    body {
+
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+
+    h1 {
+        color: #faf6f6;
+    }
+
+    nav {
+        background-color: #333;
+        overflow: hidden;
+    }
+
+    label {
+        display: block;
+        margin-bottom: 5px;
+    }
+
+    input[type="text"],
+    input[type="password"] {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+
+    .botao-produtos {
+        background-color: #4CAF50;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        text-decoration: none;
+    }
+
+    .cadastro-link {
+        color: #4CAF50;
+        text-decoration: none;
+        display: block;
+        margin-top: 10px;
+        text-align: center;
+    }
+
+
+    footer {
+        margin-top: 20px;
+        text-align: center;
+        color: #777;
+    }
+
+    footer a {
+        color: #4CAF50;
+        text-decoration: none;
+    }
+
+    ul {
+        list-style-type: none;
+        padding: 0;
+    }
+
+    h2 {
+        color: #000000;
+    }
+    
+    .caixa-login {
+        max-width: 400px;
+        margin: 0 auto;
+        padding: 20px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        background-color: #f9f9f9;
+    }
+
+    input[type="submit"] {
+        background-color: #4CAF50;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    input[type="submit"]:hover {
+        background-color: #45a049;
+    }
+</style>
+  
+<main>
+    <section>
+        <h2> Login </h2>
+        <form action="processar_login.html" method="POST">
+            <label for="username">Nome de usuário:</label>
+            <input type="text" id="username" name="username" required>
+
+            <label for="password">Senha:</label>
+            <input type="password" id="password" name="password" required>
+
+            <input type="submit" value="Entrar">
+        </form>
+    <ul>
+        <li><a href="cadastro.html" class="cadastro-link"> Não tem uma conta? Cadastre-se aqui</a></li>
+    </ul>
+    </section>
+
+</main>
+
+<footer>
+    <p>&copy; 2024 ONSHOP. Todos os direitos reservados.</p>
+    <p><a href="produtos.html"> Voltar para Produtos</a></p>
+</footer>
+
+
+
+</html>
+
+
+
+/* 
+    Este é um exemplo de página de login simples em HTML. 
+    Ele inclui campos para nome de usuário e senha, 
+    bem como um botão de envio para processar o login.
+    Além disso, há um link para a página de cadastro caso o usuário não tenha uma conta.
+*/
